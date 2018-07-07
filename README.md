@@ -14,9 +14,8 @@ Summary: A thin, more convenient wrapper around MSNumpress
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pynumpress-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pynumpress-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/pynumpress-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pynumpress-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pynumpress-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pynumpress-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pynumpress-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pynumpress-feedstock)
 
 Current release info
 ====================
