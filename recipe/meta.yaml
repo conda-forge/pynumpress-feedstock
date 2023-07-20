@@ -1,17 +1,17 @@
 {% set name = "pynumpress" %}
-{% set version = "0.0.5" %}
-{% set sha256 = "1dfa54928a687f292a3901ec6c5383379029061b3bb5e8cdbeabf115e2ddc1e4" %}
+{% set version = "0.0.8" %}
+{% set sha256 = "8c449687d6924a71ee3d20331ea1a6e9f223ee82682a3b6f6eba5da26c46d591" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: '{{ sha256 }}'
+  sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -34,7 +34,7 @@ about:
   home: https://github.com/mobiusklein/pynumpress
   license: Apache-2.0
   license_family: Apache
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: A thin, more convenient wrapper around MSNumpress
 
 extra:
