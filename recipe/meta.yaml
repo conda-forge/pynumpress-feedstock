@@ -1,6 +1,6 @@
 {% set name = "pynumpress" %}
-{% set version = "0.0.8" %}
-{% set sha256 = "8c449687d6924a71ee3d20331ea1a6e9f223ee82682a3b6f6eba5da26c46d591" %}
+{% set version = "0.0.9" %}
+{% set sha256 = "c0dafd7837cee64fc59eb5fc0f941a1324e631a2d5b2d6ac7e28becfd29bd86e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,12 +11,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
